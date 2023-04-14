@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. ../conf/config.sh
+
 #Проверка наличия и удаление docker snap
 snap list | grep docker
 if [ $? -eq 0 ]; then

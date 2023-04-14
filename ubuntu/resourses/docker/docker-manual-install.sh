@@ -1,17 +1,10 @@
 #!/usr/bin/env bash
-
-#Задаём необходимые версии пакетов докера
-CONTAINERD_VER=containerd.io_1.6.9-1_amd64.deb
-DOCKER_CE_VER=docker-ce_23.0.1-1~debian.10~buster_amd64.deb
-DOCKER_CE_CLI_VER=docker-ce-cli_23.0.1-1~debian.10~buster_amd64.deb
-DOCKER_BUILDX_VER=docker-buildx-plugin_0.10.2-1~debian.10~buster_amd64.deb
-DOCKER_COMPOSE_VER=docker-compose-plugin_2.16.0-1~debian.10~buster_amd64.deb
-CURR_DIR=$( pwd)
-USER=$( echo $USER)
+. ../conf/config.sh
 
 
 #Устанавливаем необходимые компоненты
-apt-get update && sudo apt-get upgrade -y
+apt-get update
+apt-get upgrade -y
 apt-get install ca-certificates curl gnupg lsb-release wget -y
 
 #Выкачиваем нужные пакеты для докера
@@ -29,4 +22,5 @@ systemctl start docker
 systemctl enable docker
 
 #groupadd docker $$ usermod -aG docker $USER
+groupadd docker
 usermod -aG docker $USER

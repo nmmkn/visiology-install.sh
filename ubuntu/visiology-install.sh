@@ -3,6 +3,21 @@
 #Папки и файлы конфигураций платформы.
 . ./resourses/conf/config.sh
 
+
+#Проверяем наличие и удаляем Docker из Snap
+. ./docker/snap-remove.sh
+
+#Устанавливаем Docker
+. ./docker/docker-repo-install.sh
+
+#Устанавливаем платформу
+. ./platform/platform-install.sh
+
+
+
+
+
+
 echo "Выберите вверсию для установки:"
 echo "1 версия 2.30"
 echo "2 версия 2.31"

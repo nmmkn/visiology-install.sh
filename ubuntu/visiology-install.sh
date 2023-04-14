@@ -6,10 +6,10 @@
 
 
 #Проверяем наличие и удаляем Docker из Snap
-. ./docker/snap-remove.sh
+. ./resourses/docker/snap-remove.sh
 
 #Устанавливаем Docker
-. ./docker/docker-repo-install.sh
+. ./resourses/docker/docker-repo-install.sh
 
 #Устанавливаем платформу
-. ./platform/platform-install.sh
+. ./resourses/platform/platform-install.sh

@@ -1,5 +1,4 @@
 #!/bin/bash
-
 . ../conf/config.sh
 
 cd $HOME_DIR

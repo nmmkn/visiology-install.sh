@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ../conf/config.sh
+. ./config.sh
 
 #Проверка наличия и удаление docker snap
 snap list | grep docker

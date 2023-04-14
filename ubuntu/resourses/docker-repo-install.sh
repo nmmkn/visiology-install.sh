@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ../conf/config.sh
+. ./config.sh
 
 #Установка Docker последней версии.
 apt-get update

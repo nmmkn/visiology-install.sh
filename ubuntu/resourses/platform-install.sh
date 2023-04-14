@@ -1,5 +1,5 @@
 #!/bin/bash
-. ../conf/config.sh
+. ./config.sh
 
 cd $HOME_DIR
 wget "https://storage.yandexcloud.net/distributions/${VP_DISTR}"

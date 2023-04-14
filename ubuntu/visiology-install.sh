@@ -2,14 +2,14 @@
 
 
 #Папки и файлы конфигураций платформы.
-. ./resourses/conf/config.sh
+. ./resourses/config.sh
 
 
 #Проверяем наличие и удаляем Docker из Snap
-. ./resourses/docker/snap-remove.sh
+. ./resourses/snap-remove.sh
 
 #Устанавливаем Docker
-. ./resourses/docker/docker-repo-install.sh
+. ./resourses/docker-repo-install.sh
 
 #Устанавливаем платформу
-. ./resourses/platform/platform-install.sh
+. ./resourses/platform-install.sh

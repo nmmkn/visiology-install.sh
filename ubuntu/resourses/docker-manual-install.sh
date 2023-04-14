@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-. ../conf/config.sh
+. ./config.sh
 
 
 #Устанавливаем необходимые компоненты

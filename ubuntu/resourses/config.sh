@@ -15,7 +15,7 @@ VP_VERSION=v2 # v2, v3, all
 VP_ADDRESS=$( hostname -I) #ip address, dns name
 
 #Параметры Docker
-DOCKER_SETUP= repo #repo, manual
+DOCKER_SETUP=repo #repo, manual
 CONTAINERD_VER=containerd.io_1.6.9-1_amd64.deb
 DOCKER_CE_VER=docker-ce_23.0.1-1~debian.10~buster_amd64.deb
 DOCKER_CE_CLI_VER=docker-ce-cli_23.0.1-1~debian.10~buster_amd64.deb

@@ -5,7 +5,7 @@
 #Установка Docker последней версии.
 apt-get update
 apt-get upgrade -y
-apt-get install ca-certificates curl gnupg lsb-release
+apt-get install ca-certificates curl gnupg lsb-release wget -y
 
 if docker -v docker &> /dev/null
 then

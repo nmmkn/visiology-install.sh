@@ -5,7 +5,7 @@
 #Конфигурационные параметры платформы Visiology
 
 # Параметры окружения
-HOME_DIR=~/
+INSTALL_DIR=~/
 WORK_DIR=./distrib_$VP_REALESE
 CURRENT_USER=$( echo $USER)
 

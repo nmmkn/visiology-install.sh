@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null
-. ./config.sh
+. ../conf/config.sh
 
 #Установка Docker последней версии.
 apt-get update

@@ -19,10 +19,10 @@ read -p "Скачать дистрибутив $VP_REALESE? (Y/N)" answer
 						echo -e "\e[31mОтсутствует файл с дистрибутивом\e[0m"
 						exit 1
 					fi
-			tar -xvf ${VP_DISTR}
+			tar -xvfk ${VP_DISTR}
 			cd ${WORK_DIR}
 			docker load < images/platform-deployment.tar.gz
-			docker run -it --rm -u $(id -u):$(id -g) -v "$(pwd)":/mnt/volume -v /var/lib/visiology/certs:/mnt/visiology cr.yandex/crpe1mi33uplrq7coc9d/visiology/release/platform-deployment:$platform_version
+			docker run -it --rm -u $(id -u):$(id -g) -v "$(pwd)":/mnt/volume -v /var/lib/visiology/certs:/mnt/visiology cr.yandex/crpe1mi33uplrq7coc9d/visiology/release/platform-deployment:${VP_REALESE}
 			./load_images.sh
 			cd v2 && FALSE=false ./prepare-folders.sh && cd ..
 			v2/prepare-config.sh

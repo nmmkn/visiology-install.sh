@@ -7,13 +7,15 @@
 # Параметры окружения
 CURRENT_USER=${SUDO_USER}
 INSTALL_DIR=$(eval echo ~${SUDO_USER})
-WORK_DIR=./distrib_${VP_REALESE}
+WORK_DIR=./distrib_${VP_ARCHIVE}
 
 
 
 #Параметры Visiology
-VP_DISTR=distrib_${VP_REALESE}.tar.xz
-VP_REALESE=2.30+3.1
+VP_DISTR=distrib_${VP_ARCHIVE}.tar.xz
+VP_REALESE=2.30_3.1
+VP_ARCHIVE=2.30+3.1
+
 VP_VERSION=v2 # v2, v3, all
 VP_ADDRESS=$( hostname -I) #ip address, dns name
 

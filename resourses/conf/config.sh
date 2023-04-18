@@ -12,7 +12,7 @@ CURRENT_USER=$( echo $USER)
 
 #Параметры Visiology
 VP_DISTR=distrib_$VP_REALESE.tar.xz
-VP_REALESE=2.30_3.1
+VP_REALESE=2.30+3.1
 VP_VERSION=v2 # v2, v3, all
 VP_ADDRESS=$( hostname -I) #ip address, dns name
 

@@ -5,14 +5,14 @@
 #Конфигурационные параметры платформы Visiology
 
 # Параметры окружения
-CURRENT_USER=$( echo $USER)
-INSTALL_DIR=/home/${CURRENT_USER}
-WORK_DIR=./distrib_$VP_REALESE
+CURRENT_USER=${SUDO_USER}
+INSTALL_DIR=$(eval echo ~${SUDO_USER})
+WORK_DIR=./distrib_${VP_REALESE}
 
 
 
 #Параметры Visiology
-VP_DISTR=distrib_$VP_REALESE.tar.xz
+VP_DISTR=distrib_${VP_REALESE}.tar.xz
 VP_REALESE=2.30+3.1
 VP_VERSION=v2 # v2, v3, all
 VP_ADDRESS=$( hostname -I) #ip address, dns name

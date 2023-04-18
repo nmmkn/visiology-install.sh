@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null
-. ../conf/config.sh
+. ../resourses/conf/config.sh
 
 cd $HOME_DIR
 wget "https://storage.yandexcloud.net/distributions/$VP_DISTR"

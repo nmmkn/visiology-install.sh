@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-. ../conf/config.sh
+. ../resourses/conf/config.sh
 
 cd $WORK_DIR
 echo -e "\e[36mТип установки\e[0m"

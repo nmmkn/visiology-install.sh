@@ -1,12 +1,12 @@
 {
 	"enabled": true,
 	"jdbcOptions": {
-		"connection": "jdbc:{clickhouse,postgresql,vertica,mysql, etc.}://{SERVER}:{PORT}/{DATABASE}?user={postgres}&password={1}",
+		"connection": "jdbc:clickhouse,postgresql,vertica,mysql, etc.://SERVER:PORT/DATABASE?user=USER&password=PASSWORD",
 		"isResetUpdateTime": "false",
 		"socket_timeout": 300000
 	},
 	"sqlMapping": {
-		"{VIQUBE_TABLE}": {
+		"VIQUBE_TABLE": {
 			"columns": {
 				"VIQUBE_COLUMN1": {
 					"COUNT_WITH_NULL": "SQL_COLUMN1"

@@ -13,7 +13,7 @@ sudo chmod +x -R visiology-install.sh/
 ```
  Запустите скрипт установки.
  ```
- cd visiology-install.sh/ && sudo visiology-install.sh
+ cd visiology-install.sh/ && sudo ./visiology-install.sh
  ```
  Скрипт установит последние версии аналитической платформы Visiology и Docker.
  

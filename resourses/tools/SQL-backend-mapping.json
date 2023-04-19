@@ -1,0 +1,21 @@
+{
+	"enabled": true,
+	"jdbcOptions": {
+		"connection": "jdbc:postgresql://{SERVER}:{PORT}/{DATABASE}?user={postgres}&password={1}",
+		"isResetUpdateTime": "false",
+		"socket_timeout": 300000
+	},
+	"sqlMapping": {
+		"{VIQUBE_DATABASE}": {
+			"columns": {
+				"VIQUBE_TABLE1": {
+					"COUNT_WITH_NULL": "SQL_TABLE1"
+				},
+				"VIQUBE_TABLE2": {
+					"COUNT_WITH_NULL": "SQL_TABLE2"
+				}
+			},
+			"sqlTable": "SQL_DATABASE"
+		}
+	}
+}

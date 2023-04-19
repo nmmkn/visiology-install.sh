@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null
+cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P
 
 #Обновление системы и установка необходимых компонентов
 apt-get update

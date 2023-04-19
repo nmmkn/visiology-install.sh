@@ -13,7 +13,7 @@ WORK_DIR=./distrib_${VP_ARCHIVE}
 
 #Параметры Visiology
 VP_DISTR=distrib_${VP_ARCHIVE}.tar.xz
-VP_REALESE=2.30_3.1
+VP_RELEASE=2.30_3.1
 VP_ARCHIVE=2.30+3.1
 
 VP_VERSION=v2 # v2, v3, all

@@ -7,10 +7,10 @@ cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null
 
 
 #Проверяем наличие и удаляем Docker из Snap
-#. ./resourses/docker/snap-remove.sh
+. ./resourses/docker/snap-remove.sh
 
 #Устанавливаем Docker
-#. ./resourses/docker/docker-repo-install.sh
+. ./resourses/docker/docker-repo-install.sh
 
 #Устанавливаем платформу
 . ./resourses/platform/platform-install.sh

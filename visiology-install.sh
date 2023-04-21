@@ -12,10 +12,20 @@ apt-get install ca-certificates curl gnupg lsb-release wget git -y
 
 
 #Проверяем наличие и удаляем Docker из Snap
-. ./resourses/docker/snap-remove.sh
 
-#Устанавливаем Docker
+
+case ${DOCKER_INSTALL} in
+repo)
+. ./resourses/docker/snap-remove.sh
 . ./resourses/docker/docker-repo-install.sh
+;;
+manual)
+. ./resourses/docker/docker-manual-install.sh
+;;
+*)
+echo "Выбран не правильный тип установки."
+;;
+esac
 
 #Устанавливаем платформу
 . ./resourses/platform/platform-install.sh

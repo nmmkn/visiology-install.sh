@@ -1,7 +1,7 @@
 {
 	"enabled": true,
 	"jdbcOptions": {
-		"connection": "jdbc:clickhouse,postgresql,vertica,mysql, etc.://SERVER:PORT/DATABASE?user=USER&password=PASSWORD",
+		"connection": "jdbc:postgresql://SERVER:PORT/DATABASE?user=USER&password=PASSWORD",
 		"isResetUpdateTime": "true\false",
 		"socket_timeout": 300000
 	},

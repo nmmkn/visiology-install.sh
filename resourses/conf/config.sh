@@ -2,7 +2,7 @@
 
 # Параметры окружения дистрибутива linux.
 CURRENT_USER=${SUDO_USER}
-INSTALL_DIR=/opt
+INSTALL_DIR=/usr/local
 WORK_DIR=./distrib_${VP_ARCHIVE}
 
 #Версия дистрибутива аналитической платформы Visiology.
@@ -16,7 +16,7 @@ VP_ADDRESS=$( hostname -I) #ip address, dns name.
 #Параметры ручной установки Docker.
 #Для получения списка поддерживаемых версий, исполните комманду apt-cache madison docker-ce | awk '{ print $3 }' для каждого пакета
 SYSTEM_VERSION=ubuntu #ubuntu, debian
-SYSTEM_CODENAME=jammy #для Ubuntu - kinetic,jammy,focal,bionic. Для Debian - bullseye,buster. Для Astra Linux - buster
+SYSTEM_CODENAME=jammy #для Ubuntu - kinetic,jammy,focal,bionic. Для Debian - bullseye,buster. Для Astra Linux 1.7.3 - buster
 DOCKER_INSTALL=auto #auto, manual. Для Astra Linux - manual.
 DOCKER_VERSION=latest #latest, manual. Для Astra Linux - manual.
 CONTAINERD_VER=containerd.io_1.6.9-1_amd64.deb

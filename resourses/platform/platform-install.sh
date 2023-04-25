@@ -3,7 +3,10 @@
 . ./resourses/conf/config.sh
 
 cd $INSTALL_DIR
-wget "https://storage.yandexcloud.net/distributions/${VP_DISTR}"
+
+#find -O4 / -name inst.sh 2>> /dev/null
+
+wget -nc "https://storage.yandexcloud.net/distributions/${VP_DISTR}"
 
 tar -xvf ${VP_DISTR}
 cd ${WORK_DIR}

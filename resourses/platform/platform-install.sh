@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-#cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null
 . ./resourses/conf/config.sh
 
 cd $INSTALL_DIR

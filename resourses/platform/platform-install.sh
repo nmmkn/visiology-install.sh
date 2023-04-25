@@ -4,9 +4,7 @@
 
 cd $INSTALL_DIR
 
-#find -O4 / -name inst.sh 2>> /dev/null
-
-wget -nc "https://storage.yandexcloud.net/distributions/${VP_DISTR}"
+wget -vnc "https://storage.yandexcloud.net/distributions/${VP_DISTR}"
 
 tar -xvf ${VP_DISTR}
 cd ${WORK_DIR}

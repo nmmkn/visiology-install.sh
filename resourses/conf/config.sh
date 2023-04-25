@@ -17,10 +17,10 @@ VP_ADDRESS=$( hostname -I) #ip address, dns name.
 #Для получения списка поддерживаемых версий, исполните комманду apt-cache madison docker-ce | awk '{ print $3 }' для каждого пакета
 SYSTEM_VERSION=ubuntu #ubuntu, debian
 SYSTEM_CODENAME=jammy #для Ubuntu - kinetic,jammy,focal,bionic. Для Debian - bullseye,buster. Для Astra Linux 1.7.3 - buster
-DOCKER_INSTALL=auto #auto, manual. Для Astra Linux - manual.
+DOCKER_INSTALL=manual #auto, manual. Для Astra Linux - manual.
 DOCKER_VERSION=latest #latest, manual. Для Astra Linux - manual.
 CONTAINERD_VER=containerd.io_1.6.9-1_amd64.deb
-DOCKER_CE_VER=docker-ce_23.0.4-1~debian.10~buster_amd64.deb
-DOCKER_CE_CLI_VER=docker-ce-cli_23.0.4-1~debian.10~buster_amd64.deb
-DOCKER_BUILDX_VER=docker-buildx-plugin_0.10.4-1~debian.10~buster_amd64.deb
-DOCKER_COMPOSE_VER=docker-compose-plugin_2.16.0-1~debian.10~buster_amd64.deb
+DOCKER_CE_VER=docker-ce_23.0.4-1~ubuntu.10~jammy_amd64.deb
+DOCKER_CE_CLI_VER=docker-ce-cli_23.0.4-1~ubuntu.10~jammy_amd64.deb
+DOCKER_BUILDX_VER=docker-buildx-plugin_0.10.4-1~ubuntu.10~jammy_amd64.deb
+DOCKER_COMPOSE_VER=docker-compose-plugin_2.16.0-1~ubuntu.10~jammy_amd64.deb

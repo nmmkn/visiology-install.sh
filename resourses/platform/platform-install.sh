@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 . ./resourses/conf/config.sh
-sudo --user=${CURRENT_USER} newgrp docker
-cd $INSTALL_DIR
+
+cd ${INSTALL_DIR}
 
 wget -vnc "https://storage.yandexcloud.net/distributions/${VP_DISTR}"
 
@@ -13,4 +13,4 @@ docker run -it --rm -u $(id -u):$(id -g) -v "$(pwd)":/mnt/volume -v /var/lib/vis
 ./load_images.sh --version ${VP_VERSION}
 cd v2 && FALSE=false ./prepare-folders.sh && cd ..
 v2/prepare-config.sh
-#./run.sh -p $platform_url --start v2
+#./run.sh -p $platform_url --start ${VP_VERSION}

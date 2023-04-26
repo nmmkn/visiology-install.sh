@@ -7,8 +7,6 @@ apt-get update
 apt-get upgrade -y
 apt-get install ca-certificates curl gnupg lsb-release wget -y
 
-
-
 #Папки и файлы конфигураций платформы.
 . ./resourses/conf/config.sh
 

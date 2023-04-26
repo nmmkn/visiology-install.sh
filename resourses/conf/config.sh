@@ -7,8 +7,8 @@ WORK_DIR=./distrib_${VP_ARCHIVE}
 
 #Версия дистрибутива аналитической платформы Visiology.
 VP_DISTR=distrib_${VP_ARCHIVE}.tar.xz
-VP_RELEASE=2.30_3.1
-VP_ARCHIVE=2.30+3.1
+VP_RELEASE=2.29.1 #2.30_3.1
+VP_ARCHIVE=2.29.1 #2.30+3.1
 
 VP_VERSION=v2 # v2, v3, all.
 VP_ADDRESS=$( hostname -I) #ip address, dns name.

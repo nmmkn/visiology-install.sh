@@ -14,4 +14,5 @@ apt-get install ca-certificates curl gnupg lsb-release wget -y
 . ./resourses/docker/docker-install.sh
 
 #Устанавливаем платформу
-. ./resourses/platform/platform-install.sh
+#. ./resourses/platform/platform-install.sh
+. ./resourses/platform/platform-old-install.sh

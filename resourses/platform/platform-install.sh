@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 . ./resourses/conf/config.sh
-
+sudo --user=${CURRENT_USER} newgrp docker
 cd $INSTALL_DIR
 
 wget -vnc "https://storage.yandexcloud.net/distributions/${VP_DISTR}"

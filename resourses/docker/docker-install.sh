@@ -36,4 +36,3 @@ esac
 
 groupadd docker
 usermod -aG docker ${CURRENT_USER}
-sudo --user=${CURRENT_USER} newgrp docker
